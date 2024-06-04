@@ -2,7 +2,6 @@ services:
   nginx:
     container_name: laravel_nginx
     image: nginx:latest
-    platform: linux/x86_64
     ports:
       - 8000:8000
     environment:
@@ -29,7 +28,6 @@ services:
   db:
     container_name: laravel_db
     image: mysql:8.0
-    platform: linux/x86_64
     ports:
       - 3306:3306
     environment:
@@ -47,7 +45,6 @@ services:
   phpmyadmin:
     container_name: laravel_myadmin
     image: phpmyadmin/phpmyadmin
-    platform: linux/x86_64
     ports:
       - 8080:80
     environment:
@@ -58,7 +55,6 @@ services:
   https-portal:
     container_name: laravel_https_portal
     image: steveltn/https-portal:1
-    platform: linux/x86_64
     ports:
       - 80:80
       - 443:443
@@ -73,7 +69,6 @@ services:
   mailhog:
     container_name: laravel_mailhog
     image: mailhog/mailhog
-    platform: linux/x86_64
     ports:
       - 1025:1025
       - 8025:8025
