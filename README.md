@@ -26,7 +26,8 @@ $ docker-compose exec php bash
 |--breeze=TYPE|Laravel Breeze をインストールする。TYPEには vue, react が指定できる。|
 |--jetstream|Laravel Jetstream をインストールする。標準インストール(Livewire)。|
 |--jetstream=TYPE|Laravel Jetstream をインストールする。TYPEには livewire, inertia が指定できる。|
-|--teams|Laravel Jetstream のチーム機能を有効にする。|
+|--fortify|Laravel Fortify をインストールする。|
+|--teams|Laravel Jetstream のチーム機能を有効にする。(Fortify でも指定可能)|
 |--api|Laravel Jetstream のAPI機能を有効にする。|
 |--verification|Laravel Jetstream のメールバリデーション機能を有効にする。|
 |-h, --help|ヘルプを表示する|
